@@ -7,20 +7,20 @@
   <title>Bootstrap Test</title>  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"> 
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-dark py-3 fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#"> Dojo </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="#work" class="nav-link">What we did</a>
+            <a href="#public" class="nav-link">Usefull info</a>
           </li>
           <li class="nav-item">
             <a href="#questions" class="nav-link">Questions</a>
@@ -48,7 +48,7 @@
   </section>
   <section class="p-5">
     <div class="container">
-      <div class="row text-center">
+      <div class="row text-center g-4">
         <div class="col-md">
           <div class="card bg-dark text-light">
             <div class="card-body text-center">
@@ -65,7 +65,7 @@
           </div>
         </div>
         <div class="col-md">
-          <div class="card bg-dark text-light">
+          <div class="card bg-warning text-dark">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <i class="bi bi-mortarboard"></i>
@@ -92,6 +92,115 @@
                 Learn to code by watching others and practice by participating 
               </p>
             </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Who can join  -->
+  <section id="public" class="p-5">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md">
+        <img src="/img/Public.svg" alt="" class="img-fluid">
+      </div>
+      <div class="col-md p-5">
+        <h2>
+          Who can join the dojo
+        </h2>
+        <p class="lead">
+          To apprentices (computer scientists): to reinforce a concept they have seen in class, or to give them the basics so that they will be more comfortable in professional school.
+        </p>
+        <p class="lead">
+          To programmers: to discover and learn about other people's approaches, to go on technology tourism, to get out of their comfort zone or finally to network.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- When to join -->
+  <section id="joinInfo" class="p-5 bg-dark">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md p-5 text-light">
+        <h2>
+          When dojos take place?
+        </h2>
+        <p class="lead">
+          Dojos are held on Mondays and Fridays:
+        </p>
+        <p class="lead">
+          <span class="text-warning">Monday:</span> between <span class="text-warning">11:00 and 12:00</span> for apprentices.
+          <span class="text-warning">Friday:</span> between <span class="text-warning">13:00 and 14:00 </span>  for experienced students.
+        </p>
+      </div>
+      <div class="col-md">
+        <img src="/img/When.svg" alt="" class="img-fluid">
+      </div>
+    </div>
+  </section>
+  <!-- FAQ -->
+  <section id="questions" class="p-5">
+    <div class="container">
+      <h2 class="text-center mb-4">
+        Frequently Asked Questions
+      </h2>
+      <div class="accordion accordion-flush" id="accordionFAQ">
+        <!-- first question -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+              What is a dojo ?
+            </button>
+          </h2>
+          <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">A "programming dojo" is a meeting of coders of all levels to work on a common problem, with the aim of learning skills, collaborating in a non-competitive and fun environment, and sharing experiences.</div>
+          </div>
+        </div>
+        <!-- second question -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+              Are there any rules to follow ?
+            </button>
+          </h2>
+          <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">Yes, some of them and they are the following:</br>General rules</br>
+                <ul>
+                  <li> 
+                    Arrive on time
+                  </li>
+                  <li> 
+                    First time present code required
+                  </li>
+                  <li> 
+                    Read emails
+                  </li>
+                  <li> 
+                    Reply present on telegram
+                  </li>
+                </ul>
+                Coding rules</br>
+                <ul>
+                  <li>
+                    Have unique variables
+                  </li>
+                  <li>
+                    Use English (variables, comments, commit messages)
+                  </li>
+                  <li>
+                    Indent with 2 spaces
+                  </li>
+                </ul>              
+            </div>
+          </div>
+        </div>
+        <!-- third question -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+              How do we proceed?
+            </button>
+          </h2>
+          <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+            <div class="accordion-body">Our dojos take place in the form of "randori", i.e. a laptop is passed from participant to participant every 5 minutes, and each one in turn advances according to his or her desire and experience on the group exercise. Sometimes someone presents a topic during a session, which is called a "kata".</div>
+          </div>
         </div>
       </div>
     </div>
