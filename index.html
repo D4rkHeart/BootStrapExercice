@@ -9,6 +9,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"> 
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-dark py-3 fixed-top">
@@ -205,8 +207,44 @@
       </div>
     </div>
   </section>
+  <section class="p-5">
+    <div class="container">
+      <rog class="g-4">
+        <div class="col-md">
+          <h2 class="text-center mb-4">
+            Contact Info
+          </h2>
+          <ul class="list-group list-group-flush lead">
+            <li class="list-group-item">
+              <span class="fw-bold">
+                Main location : INN 011 (INN Building) - Station 14 - CH-1015 Lausanne
+              </span>
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">
+                Telegram : <a href="https://t.me/joinchat/AJdVTD5H6UloRX9AaGg8RA">Click here to join the Telegram group</a>
+              </span>
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">
+                GitHub : <a href="https://github.com/epfl-dojo">Our work is available here</a>
+              </span>
+          </ul>
+        </div>
+        <div class="col-md">
+          <div id='location'></div>
+        </div>
+      </rog>
+    </div>
+  </section>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZDRya2hlYXJ0IiwiYSI6ImNrenk0bm1qZDA4NWsyeXBjcWFlemJycXgifQ.-aFpqlHMiE5LslYNLi6oug';
+    var map = new mapboxgl.Map({
+    container: 'location',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [46.518808, 6.562685],
+    zoom: 15,
+    });
+  </script>
 </body>
 </html>
-
-
-
