@@ -28,7 +28,7 @@
             <a href="#questions" class="nav-link">Questions</a>
           </li>
           <li class="nav-item">
-            <a href="#participant" class="nav-link">Who we are ?</a>
+            <a href="#location" class="nav-link">Where we are ?</a>
           </li>
         </ul>
       </div>
@@ -40,14 +40,46 @@
         <div>
         <h1>learn <span class="text-warning">together</span> </h1>
         <p class="lead my-4">
-          « A Coding Dojo is a meeting where a bunch of coders get together to work on a programming challenge. ».
+          « A Coding Dojo is a meeting where a bunch of coders get together to work on a programming challenge ».
         </p>
-        <button class="btn btn-warning btn-lg">Join us right now !</button>
+        <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#joinUs">Join us right now !</button>
         </div>
       <img class="img-fluid w-60 d-none d-sm-block" src="img/dojoLogo.png" alt="dojoLogo">
       </div>
     </div>
   </section>
+  <!-- Modal -->
+  <div class="modal fade" id="joinUs" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Fill out this form and we will get back to you</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="first-name" class="col-form-label"> First Name:</label>
+              <input type="text" class="form-control" id="frst-name"/>
+            </div>
+            <div class="mb-3">
+              <label for="last-name" class="col-form-label"> Last Name:</label>
+              <input type="text" class="form-control" id="last-name"/>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="col-form-label"> Email:</label>
+              <input type="text" class="form-control" id="email"/>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-warning">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Card presentation -->
   <section class="p-5">
     <div class="container">
       <div class="row text-center g-4">
@@ -128,7 +160,7 @@
           Dojos are held on Mondays and Fridays:
         </p>
         <p class="lead">
-          <span class="text-warning">Monday:</span> between <span class="text-warning">11:00 and 12:00</span> for apprentices.
+          <span class="text-warning">Monday:</span> between <span class="text-warning">11:00 and 12:00</span> for apprentices.</br>
           <span class="text-warning">Friday:</span> between <span class="text-warning">13:00 and 14:00 </span>  for experienced students.
         </p>
       </div>
@@ -207,10 +239,10 @@
       </div>
     </div>
   </section>
-<<<<<<< HEAD
-  <section class="p-5">
+  <!-- Location information -->
+  <section class="p-5" id="location">
     <div class="container">
-      <rog class="g-4">
+      <div class="row g-4">
         <div class="col-md">
           <h2 class="text-center mb-4">
             Contact Info
@@ -233,22 +265,28 @@
           </ul>
         </div>
         <div class="col-md">
-          <div id='location'></div>
+          <div id='map' ></div>
         </div>
-      </rog>
+      </div>
     </div>
   </section>
+  <!-- Footer -->
+  <footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <p class="lead">
+        Made with &hearts; by <a class="text-warning" href="https://github.com/D4rkHeart">D4rkHeart</a>
+      </p>
+      <a href="" class="postion absolute bottom-0 end-0 p-5"></a>
+    </div>
+  </footer>
   <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZDRya2hlYXJ0IiwiYSI6ImNrenk0bm1qZDA4NWsyeXBjcWFlemJycXgifQ.-aFpqlHMiE5LslYNLi6oug';
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZDRya2hlYXJ0IiwiYSI6ImNrenk1bXF4ZDA4Zmwybm82aHNmZnN1bDQifQ.UolA2IbfVNhjpW5oy28naw';
     var map = new mapboxgl.Map({
-    container: 'location',
+    container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
-    center: [46.518808, 6.562685],
-    zoom: 15,
+    center: [6.562655, 46.518822],
+    zoom: 17,
     });
   </script>
-=======
-
->>>>>>> f9c05329b723681a586e808e28b86ad999f03c64
 </body>
 </html>
